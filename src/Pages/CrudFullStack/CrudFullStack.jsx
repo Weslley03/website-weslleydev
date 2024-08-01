@@ -1,6 +1,7 @@
 import { ContainerHome } from "../Home/HomeStyled";
 import { DivImagem, ImgProjeto } from "../WebSockets/WebSocketsStyled";
 import { DivSobreProjeto, DivTitulo } from "../WfNews/WfNewsStyled";
+import imageProject from '../../assets/crudfullstack.png'
 
 function CrudFullStack(){
     return(
@@ -11,7 +12,7 @@ function CrudFullStack(){
             </DivTitulo>
 
             <DivImagem>
-                <ImgProjeto src="../../../public/crudfullstack/crudfullstack.png" className="d-block w-100"/>
+                <ImgProjeto src={imageProject} className="d-block w-100"/>
             </DivImagem>
 
             <DivSobreProjeto>

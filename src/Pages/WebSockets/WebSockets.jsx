@@ -1,6 +1,7 @@
 import { ContainerHome } from "../Home/HomeStyled";
 import { DivSobreProjeto, DivTitulo } from "../WfNews/WfNewsStyled";
 import { DivImagem, ImgProjeto} from "./WebSocketsStyled";
+import imageProject from '../../assets/websockets.jpg'
 
 function WebSockets(){
     return(
@@ -11,7 +12,7 @@ function WebSockets(){
             </DivTitulo>
 
             <DivImagem>
-                <ImgProjeto src="../../../public/websockets/websockets.jpg" className="d-block w-100"/>
+                <ImgProjeto src={imageProject} className="d-block w-100"/>
             </DivImagem>
 
             <DivSobreProjeto>

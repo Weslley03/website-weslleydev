@@ -1,12 +1,13 @@
 import { ContainerHome, DivLogo, ImgLogo } from "../Home/HomeStyled";
 import { DivSobreProjeto, DivTitulo } from "../WfNews/WfNewsStyled";
+import weslleylogo from '../../assets/weslley.png'
 
 function Contato(){
     return(
         <ContainerHome>
             <DivTitulo>
                 <DivLogo>
-                    <ImgLogo src='../../../public/logo/weslley.png' alt='logoWeslley'/>
+                    <ImgLogo src={weslleylogo} alt='logoWeslley'/>
                 </DivLogo>
             </DivTitulo>
 

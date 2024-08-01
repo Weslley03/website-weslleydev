@@ -13,7 +13,10 @@ import {
     DivOpcoes,
     DivFooter
   } from './HomeStyled'
-  import 'bootstrap-icons/font/bootstrap-icons.css';
+  import 'bootstrap-icons/font/bootstrap-icons.css'
+  import weslleylogo from '../../assets/weslley.png'
+  import linkedinlogo from '../../assets/linkedin.png'
+  import githublogo from '../../assets/github.png'
 
 
 function Home(){
@@ -22,16 +25,16 @@ function Home(){
             <DivTop>
                 <DivLogo>                   
                      <a href='https://discord.com/channels/@me' target="_blank" rel="noopener noreferrer"> 
-                       <ImgLogo src='../../../public/logo/weslley.png' alt='logoWeslley'/>
+                       <ImgLogo src={weslleylogo} alt='logoWeslley'/>
                      </a>
                 </DivLogo>
 
                 <DivLinks> 
                     <a href='https://github.com/weslley03' target="_blank" rel="noopener noreferrer"> 
-                        <ImgLogo src='../../../public/logo/github.png'/>
+                        <ImgLogo src={linkedinlogo}/>
                     </a>
                     <a href='https://www.linkedin.com/in/weslley-felipe-69a547187/' target="_blank" rel="noopener noreferrer"> 
-                      <ImgLogo src='../../../public/logo/linkedin.png'/>
+                    <ImgLogo src={githublogo}/>
                     </a>
                 </DivLinks>
             </DivTop>
