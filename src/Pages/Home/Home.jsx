@@ -67,7 +67,9 @@ function Home(){
             </DivWelcome>
 
             <DivFooter>
-                <p>Weslley03</p>
+                <Link to={'/contato'} style={{textDecoration:'none'}}>
+                    <span>formas de contato.</span>
+                </Link>
             </DivFooter>
 
         </ContainerHome>

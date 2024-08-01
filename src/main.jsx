@@ -7,6 +7,7 @@ import WfNews from './Pages/WfNews/WfNews.jsx'
 import WebSockets from './Pages/WebSockets/WebSockets.jsx'
 import VideoStreaming from './Pages/VideoStreaming/VideoStreaming.jsx'
 import CrudFullStack from './Pages/CrudFullStack/CrudFullStack.jsx'
+import Contato from './Pages/Contato/Contato.jsx'
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,11 @@ const router = createBrowserRouter([
   {
     path: '/crudfullstack',
     element: <CrudFullStack />
+  },
+
+  {
+    path: '/contato',
+    element: <Contato />
   },
 ])
 

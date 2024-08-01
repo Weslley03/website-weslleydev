@@ -38,8 +38,6 @@ export const DivTop = styled.div`
 export const DivLogo = styled.div`
     display: flex;
     align-items: center;
-    
-    //background-color: yellow;
 
     @media (max-width: 900px) {
     margin-bottom: 1rem;
@@ -56,7 +54,7 @@ export const DivLinks = styled.div`
 export const ImgLogo = styled.img`
     height: 90px;
     width: 90px;
-    padding: 1rem;
+    padding: 0.5rem;
 
     cursor: pointer;
     border-radius: 2rem;
@@ -143,7 +141,7 @@ export const DivOpcoes = styled.div`
 export const DivFooter = styled.div`
     padding: 0.2rem;
 
-    p{
+    a{
         color: #c4c4c4;
         font-size: 20px;
     }
