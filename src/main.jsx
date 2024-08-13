@@ -8,6 +8,7 @@ import WebSockets from './Pages/WebSockets/WebSockets.jsx'
 import VideoStreaming from './Pages/VideoStreaming/VideoStreaming.jsx'
 import CrudFullStack from './Pages/CrudFullStack/CrudFullStack.jsx'
 import Contato from './Pages/Contato/Contato.jsx'
+import Lhotse from './Pages/Lhotse/Lhotse.jsx'
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,11 @@ const router = createBrowserRouter([
     element: <CrudFullStack />
   },
 
+  {
+    path: '/lhotse-learning-english',
+    element: <Lhotse />
+  },
+  
   {
     path: '/contato',
     element: <Contato />
