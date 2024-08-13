@@ -43,7 +43,7 @@ function Home(){
                 <DivSeparacaoWelcome>
                     <DivParteTextual>
                         <DivTexto>
-                            <h1> Welcome </h1>
+                            <h1> Welcome Outsider</h1>
                             <p>me chamo weslley, sou estudante de programação e desenvolvedor se especializando em backend, trabalho atualmente numa empresa de sistemas educacionais e como freelancer. tenho diversos projetos interessantes para lhe apresentar!</p>
                             <p>com experiência em HTML5 e CSS para criação de interfaces responsivas e acessíveis, tenho proficiência em JAVASCRIPT e conhecimento prático com EXPRESS.JS, REACT.JS, MONGOOSE, JWT e SWAGGER, proporcionando desenvolvimento ágil e seguro, tenho também habilidade com MYSQL WORKBENCH para estruturas relacionais e MONGODB para estruturas não relacionais. </p>
                         </DivTexto>
@@ -64,6 +64,9 @@ function Home(){
                             <Link to={'/crudfullstack'} style={{textDecoration:'none'}}>
                                 <span>CRUD-FullStack-Node-React-MySQL</span>                       
                             </Link>
+                            <Link to={'/lhotse-learning-english'} style={{textDecoration:'none'}}>
+                                <span>LHOTSE-Learning-English</span>                       
+                            </Link>
                         </DivOpcoes>
                     </DivProjetos>
                 </DivSeparacaoWelcome>
@@ -71,7 +74,7 @@ function Home(){
 
             <DivFooter>
                 <Link to={'/contato'} style={{textDecoration:'none'}}>
-                    <span>formas de contato.</span>
+                    <span>formas de contato</span>
                 </Link>
             </DivFooter>
 
