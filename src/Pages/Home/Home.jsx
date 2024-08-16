@@ -30,10 +30,10 @@ function Home(){
                 </DivLogo>
 
                 <DivLinks> 
-                    <a href='https://github.com/weslley03' target="_blank" rel="noopener noreferrer"> 
+                    <a href='https://www.linkedin.com/in/weslley-felipe-69a547187/' target="_blank" rel="noopener noreferrer"> 
                         <ImgLogo src={linkedinlogo}/>
                     </a>
-                    <a href='https://www.linkedin.com/in/weslley-felipe-69a547187/' target="_blank" rel="noopener noreferrer"> 
+                    <a href='https://github.com/weslley03' target="_blank" rel="noopener noreferrer"> 
                     <ImgLogo src={githublogo}/>
                     </a>
                 </DivLinks>
