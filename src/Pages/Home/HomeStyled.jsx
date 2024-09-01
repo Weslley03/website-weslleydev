@@ -52,9 +52,9 @@ export const DivLinks = styled.div`
 `
 
 export const ImgLogo = styled.img`
-    height: 90px;
-    width: 90px;
-    padding: 0.5rem;
+    height: 70px;
+    width: 70px;
+    padding: 0.2rem;
 
     cursor: pointer;
     border-radius: 2rem;
@@ -83,7 +83,7 @@ export const DivTexto = styled.div`
     padding: 1rem;
     h1{
         color: #c4c4c4;
-        font-size: 100px;
+        font-size: 60px;
         
         @media (max-width: 900px) {
       font-size: 50px;
@@ -99,7 +99,7 @@ export const DivTexto = styled.div`
 export const DivWelcome = styled.div`
     display: flex;  
     width: 100%;
-    margin-top: 1px;   
+    margin-top: 0.5px;   
     padding: 0.5rem;
 
     @media (max-width: 900px) {
@@ -125,9 +125,9 @@ export const DivOpcoes = styled.div`
 
     h2{
         color: #c4c4c4;
-        font-size: 80px;
+        font-size: 60px;
 
-        @media (max-width: 900) {
+        @media (max-width: 900px) {
       font-size: 40px;
     }
     }
