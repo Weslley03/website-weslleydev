@@ -83,7 +83,7 @@ export const DivTexto = styled.div`
     padding: 1rem;
     h1{
         color: #c4c4c4;
-        font-size: 60px;
+        font-size: 55px;
         
         @media (max-width: 900px) {
       font-size: 50px;
@@ -125,7 +125,7 @@ export const DivOpcoes = styled.div`
 
     h2{
         color: #c4c4c4;
-        font-size: 60px;
+        font-size: 52px;
 
         @media (max-width: 900px) {
       font-size: 40px;

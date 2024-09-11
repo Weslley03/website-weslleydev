@@ -44,19 +44,19 @@ function Home(){
                     <DivParteTextual>
                         <DivTexto>
                             <h1> Welcome Outsider</h1>
-                            <p>me chamo weslley, sou estudante de programação e desenvolvedor se especializando em backend, trabalho atualmente numa empresa de sistemas educacionais e como freelancer. tenho diversos projetos interessantes para lhe apresentar!</p>
-                            <p>com experiência em HTML5 e CSS para criação de interfaces responsivas e acessíveis, tenho proficiência em JAVASCRIPT e conhecimento prático com EXPRESS.JS, REACT.JS, MONGOOSE, JWT e SWAGGER, proporcionando desenvolvimento ágil e seguro, tenho também habilidade com MYSQL WORKBENCH para estruturas relacionais e MONGODB para estruturas não relacionais. </p>
+                            <p>My name is Weslley, Im a FullStack web developer, I currently work in an educational systems company and as a freelancer. I have several interesting projects to present to you!</p>
+                            <p>I am proficient in development with NODE.JS, languages such as JAVASCRIPT and TYPESCRIPT, practical knowledge with EXPRESS.JS, NEST.JS, REACT.JS, I have also used ORMs such as PRISMA and MONGOOSE, JWT for authentication and SWAGGER for documentation, experience that provides agile and secure development, I also have skills with MYSQL WORKBENCH for relational structures and MONGODB for non-relational structures.</p>
                         </DivTexto>
                     </DivParteTextual>
 
                     <DivProjetos>
                         <DivOpcoes>
-                            <h2>Projects</h2>
+                            <h2>my Projects</h2>
                             <Link to={'/wfnews'} style={{textDecoration:'none'}}>
-                                <span>WFNews (SITE COMPLETO)</span>
+                                <span>WFNews (FULL SITE)</span>
                             </Link>
                             <Link to={'/websockets'} style={{textDecoration:'none'}}>
-                                <span>WebSockets-NODEJS</span>
+                                <span>ONLINE CHAT with WebSockets</span>
                             </Link>
                             <Link to={'/video-streaming'} style={{textDecoration:'none'}}>
                                 <span>Video-Streaming-NODEJS</span>                           
@@ -74,7 +74,7 @@ function Home(){
 
             <DivFooter>
                 <Link to={'/contato'} style={{textDecoration:'none'}}>
-                    <span>formas de contato</span>
+                    <span>contact forms</span>
                 </Link>
             </DivFooter>
 
