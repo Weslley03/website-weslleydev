@@ -1,11 +1,8 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap-icons/font/bootstrap-icons.css'
-import image1 from '../../src/assets/wfnews (2).png'
-import image2 from '../../src/assets/wfnews (3).png'
-import image3 from '../../src/assets/wfnews (4).png'
 
-function CarouselComponent() {
+function CarouselComponent({ image1, image2, image3 }) {
   return (
     <Carousel data-bs-theme="dark">
       <Carousel.Item>
