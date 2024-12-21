@@ -1,6 +1,10 @@
 import CarouselComponent from "../../../component/carrosel/CarouselComponent.jsx";
 import { ContainerHome } from "../Home/HomeStyled";
 import { DivTitulo, DivCarrosel, DivSobreProjeto } from "./WfNewsStyled";
+import image1 from '../../assets/wfnews (2).png'
+import image2 from '../../assets/wfnews (3).png'
+import image3 from '../../assets/wfnews (4).png'
+
 
 function WfNews(){
     return(
@@ -11,7 +15,11 @@ function WfNews(){
             </DivTitulo>
 
             <DivCarrosel>
-                <CarouselComponent />
+                <CarouselComponent 
+                image1={image1} 
+                image2={image2}
+                image3={image3}
+                />
             </DivCarrosel>
 
             <DivSobreProjeto>
