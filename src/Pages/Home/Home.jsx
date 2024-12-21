@@ -45,7 +45,9 @@ function Home(){
                         <DivTexto>
                             <h1> Welcome Outsider</h1>
                             <p>My name is Weslley, Im a FullStack web developer, I currently work in an educational systems company and as a freelancer. I have several interesting projects to present to you!</p>
-                            <p>I am proficient in development with NODEJS, languages such as JAVASCRIPT and TYPESCRIPT, practical knowledge with EXPRESSJS, NESTJS, REACTJS, I have also used ORMs such as PRISMA and MONGOOSE, JWT for authentication and SWAGGER for documentation, experience that provides agile and secure development, I also have skills with MYSQL WORKBENCH for relational structures and MONGODB for non-relational structures.</p>
+                            <p>I am proficient in development with <strong style={{color: '#417E38'}}>Node.js</strong>, languages such as <strong style={{color: '#EED81C'}}>
+                                JavaScript</strong> and <strong style={{color: '#3178C5'}}>TypeScript</strong>, practical knowledge with <strong style={{color: '#EA2859'}}>Nest.js</strong>, <strong style={{color: '#3998B6'}}>React.js</strong>, I have also used 
+                            ORMs such as <strong style={{color: '#4C51BF'}}>Prisma</strong> and <strong style={{color: '#A03333'}}>Mongoose</strong>, <strong style={{color: '#FF45CE'}}>JWT</strong> for authentication and SWAGGER for documentation, experience that provides agile and secure development, I also have skills with <strong>MySQL Workbench</strong> for relational structures and <strong>MongoDB</strong> for non-relational structures.</p>
                         </DivTexto>
                     </DivParteTextual>
 
