@@ -1,5 +1,4 @@
 import { ContainerHome } from "../Home/HomeStyled";
-import { DivImagem, ImgProjeto } from "../WebSockets/WebSocketsStyled";
 import { DivSobreProjeto, DivTitulo } from "../WfNews/WfNewsStyled";
 import imageProject from '../../assets/lhotse.png'
 
@@ -11,9 +10,9 @@ function Lhotse(){
                 <a href="https://github.com/Weslley03/LHOTSE-Learning-English" target="_blank">github.com/weslley03/LHOTSE-Learning-English</a>
             </DivTitulo>
 
-            <DivImagem>
-                <ImgProjeto src={imageProject} className="d-block w-100"/>
-            </DivImagem>
+            <div>
+                <img  style={{padding: '1rem'}} src={imageProject} className="d-block w-100"/>
+            </div>
 
             <DivSobreProjeto    >
                 <p className="resumo">Este projeto é uma aplicação web desenvolvida para ajudar usuários a melhorar suas habilidades de escuta em inglês.</p>

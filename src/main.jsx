@@ -4,9 +4,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { GlobalStyled } from './GlobalStyled.jsx'
 import Home from './Pages/Home/Home.jsx'
 import WfNews from './Pages/WfNews/WfNews.jsx'
-import WebSockets from './Pages/WebSockets/WebSockets.jsx'
-import VideoStreaming from './Pages/VideoStreaming/VideoStreaming.jsx'
-import CrudFullStack from './Pages/CrudFullStack/CrudFullStack.jsx'
 import Contato from './Pages/Contato/Contato.jsx'
 import Lhotse from './Pages/Lhotse/Lhotse.jsx'
 
@@ -19,21 +16,6 @@ const router = createBrowserRouter([
   {
     path: '/wfnews',
     element: <WfNews />
-  },
-
-  {
-    path: '/websockets',
-    element: <WebSockets />
-  },
-
-  {
-    path: '/video-streaming',
-    element: <VideoStreaming />
-  },
-
-  {
-    path: '/crudfullstack',
-    element: <CrudFullStack />
   },
 
   {
