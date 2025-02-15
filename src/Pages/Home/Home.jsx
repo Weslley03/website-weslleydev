@@ -24,9 +24,6 @@ function Home(){
         <ContainerHome> 
             <DivTop>
                 <DivLogo>                   
-                     <a href='https://discord.com/channels/@me' target="_blank" rel="noopener noreferrer"> 
-                       <ImgLogo src={weslleylogo} alt='logoWeslley'/>
-                     </a>
                 </DivLogo>
 
                 <DivLinks> 
