@@ -47,8 +47,6 @@ export const DivLogo = styled.div`
 export const DivLinks = styled.div`
   display: flex;
   align-items: center;
-
-  //background-color: green;
 `;
 
 export const ImgLogo = styled.img`
@@ -107,37 +105,6 @@ export const DivWelcome = styled.div`
   }
 `;
 
-export const DivProjetos = styled.div`
-  padding: 1rem;
-  display: flex;
-  left: 10%;
-
-  @media (max-width: 900px) {
-    left: 0;
-    flex-direction: column;
-    //align-items: center;
-  }
-`;
-
-export const DivOpcoes = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  h2 {
-    color: #c4c4c4;
-    font-size: 52px;
-
-    @media (max-width: 900px) {
-      font-size: 32px;
-    }
-  }
-
-  span {
-    color: #c4c4c4;
-    font-size: 20px;
-  }
-`;
-
 export const DivFooter = styled.div`
   padding: 0.2rem;
 
@@ -145,4 +112,10 @@ export const DivFooter = styled.div`
     color: #c4c4c4;
     font-size: 20px;
   }
+`;
+
+export const Label = styled.label`
+  color: #c4c4c4;
+  font-size: 32px;
+  cursor: pointer;
 `;

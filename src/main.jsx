@@ -2,10 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { GlobalStyled } from './GlobalStyled.jsx'
-import Home from './Pages/Home/Home.jsx'
-import WfNews from './Pages/WfNews/WfNews.jsx'
-import Contato from './Pages/Contato/Contato.jsx'
-import Lhotse from './Pages/Lhotse/Lhotse.jsx'
+import Home from './pages/Home/Home.jsx'
+import Projects from './pages/Projects/Projects.jsx'
+import Contato from './pages/Contato/Contato.jsx'
 
 const router = createBrowserRouter([
   {
@@ -14,13 +13,8 @@ const router = createBrowserRouter([
   },
 
   {
-    path: '/wfnews',
-    element: <WfNews />
-  },
-
-  {
-    path: '/lhotse-learning-english',
-    element: <Lhotse />
+    path: '/weslley-projects',
+    element: <Projects />
   },
   
   {
