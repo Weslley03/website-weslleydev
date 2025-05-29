@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Card from "../../components/Card";
 
 import wfnews from '../../assets/wfnews.png';
-import lhotse from '../../assets/lhotse.png';
+import educationScreen from '../../assets/educationScreen.png';
 import checkout from '../../assets/checkout.png';
 import miniVueFramework from '../../assets/miniVueFramework.png'; 
 import cacheDecoratorRedis from '../../assets/cacheDecoratorRedis.png';
@@ -49,6 +49,16 @@ const Title = styled.h1`
 
 const myProjects = [
   { 
+    image: checkout, 
+    title: 'Custom Checkout', 
+    description: 'I developed a fully customizable checkout screen, designed to adapt to the visual identity and needs of different stores. The focus was to create a flexible, scalable and highly usable solution for different customer profiles.' 
+  },
+  { 
+    image: educationScreen, 
+    title: 'Application of studies', 
+    description: 'In these projects, I developed a responsive web interface designed for managing educational question banks and creating customizable review lists. The system allows users to create, edit, duplicate, print, and delete question lists, as well as apply filters and search functionalities efficiently.' 
+  },
+  { 
     image: wfnews, 
     title: 'WFNews', 
     description: 'I developed a modern and dynamic news website, using a combination of advanced technologies to provide a fast and intuitive user experience. This project highlights my full-stack development skills, covering everything from server configuration to user interface.' 
@@ -63,16 +73,6 @@ const myProjects = [
     title: 'cache-decorator-with-redis',
     description: 'Learning decorators in Typescript, I created a project that stores data, the result of cached functions using Redis or Memory. Ideal for APIs that return heavy or complex data. Project developed with Typescript, Redis and Modular Architecture.' 
   },
-  { 
-    image: lhotse, 
-    title: 'LHOTSE Learning-English', 
-    description: 'This project is a web application developed to help users improve their English listening skills.' 
-  },
-  { 
-    image: checkout, 
-    title: 'Custom Checkout', 
-    description: 'I developed a fully customizable checkout screen, designed to adapt to the visual identity and needs of different stores. The focus was to create a flexible, scalable and highly usable solution for different customer profiles.' 
-  },
 ];
 
 function Projects(){
@@ -83,7 +83,8 @@ function Projects(){
             { myProjects && myProjects.length > 0 &&
               myProjects.map((project) => {
                 return (
-                  <Card 
+                  <Card
+                    key={project.title}
                     image={project.image}
                     title={project.title}
                     description={project.description}
