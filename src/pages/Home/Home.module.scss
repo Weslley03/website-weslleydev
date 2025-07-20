@@ -1,6 +1,4 @@
-import styled from "styled-components";
-
-export const ContainerHome = styled.div`
+.containerHome {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,12 +18,12 @@ export const ContainerHome = styled.div`
     width: 90%;
     padding: 1rem;
   }
-`;
+}
 
-export const DivTop = styled.div`
+.top {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Alinha os itens verticalmente ao centro */
+  align-items: center;
   width: 100%;
   padding: 0.5rem;
 
@@ -33,41 +31,52 @@ export const DivTop = styled.div`
     flex-direction: column;
     align-items: flex-start;
   }
-`;
+}
 
-export const DivLogo = styled.div`
+.logo {
   display: flex;
   align-items: center;
 
   @media (max-width: 900px) {
     margin-bottom: 1rem;
   }
-`;
+}
 
-export const DivLinks = styled.div`
+.links {
   display: flex;
   align-items: center;
-`;
+}
 
-export const ImgLogo = styled.img`
+.logoImg {
   height: 70px;
   width: 70px;
   padding: 0.2rem;
 
   cursor: pointer;
   border-radius: 2rem;
-`;
+}
 
-export const DivSeparacaoWelcome = styled.div`
+.welcomeSection {
+  display: flex;
+  width: 100%;
+  margin-top: 0.5px;
+  padding: 0.5rem;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+  }
+}
+
+.separacaoWelcome {
   display: flex;
   justify-content: space-between;
 
   @media (max-width: 900px) {
     flex-direction: column;
   }
-`;
+}
 
-export const DivParteTextual = styled.div`
+.parteTextual {
   display: flex;
   max-width: 70%;
 
@@ -75,9 +84,9 @@ export const DivParteTextual = styled.div`
     max-width: 100%;
     flex-direction: column;
   }
-`;
+}
 
-export const DivTexto = styled.div`
+.texto {
   padding: 1rem;
   h1 {
     color: #c4c4c4;
@@ -92,30 +101,19 @@ export const DivTexto = styled.div`
     color: #c4c4c4;
     font-size: 20px;
   }
-`;
+}
 
-export const DivWelcome = styled.div`
-  display: flex;
-  width: 100%;
-  margin-top: 0.5px;
-  padding: 0.5rem;
-
-  @media (max-width: 900px) {
-    flex-direction: column;
-  }
-`;
-
-export const DivFooter = styled.div`
+footer {
   padding: 0.2rem;
 
   a {
     color: #c4c4c4;
     font-size: 20px;
   }
-`;
+}
 
-export const Label = styled.label`
+.label {
   color: #c4c4c4;
   font-size: 32px;
   cursor: pointer;
-`;
+}
