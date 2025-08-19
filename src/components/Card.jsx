@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const CardContainer = styled.div`
@@ -11,6 +11,7 @@ const CardContainer = styled.div`
   flex-direction: column;
   font-family: 'Arial', sans-serif;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
 
   &:hover {
     transform: translateY(-6px);
@@ -71,6 +72,12 @@ const Card = ({ image, title, description }) => {
       </CardContent>
     </CardContainer>
   );
+};
+
+Card.propTypes = {
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
 };
 
 export default Card;
