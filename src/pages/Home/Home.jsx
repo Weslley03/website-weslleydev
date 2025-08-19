@@ -39,8 +39,8 @@ function Home(){
             </div>
 
             <div className={styles.footer}>
-                <Link to={'/contato'} style={{textDecoration:'none'}}>
-                    <span>contact forms</span>
+                <Link to={'/contato'} style={{ textDecoration: 'none', color: 'inherit'}}>
+                    <span className={styles.label}>contact forms</span>
                 </Link>
             </div>
 
