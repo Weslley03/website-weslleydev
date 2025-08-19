@@ -60,9 +60,9 @@ const CardDescription = styled.p`
   line-height: 1.5;
 `;
 
-const Card = ({ image, title, description }) => {
+const Card = ({ image, title, description, onClick }) => {
   return (
-    <CardContainer>
+    <CardContainer onClick={onClick}>
       <CardImageWrapper>
         <CardImage src={image} alt={title} />
       </CardImageWrapper>
@@ -78,6 +78,7 @@ Card.propTypes = {
   image: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
 };
 
 export default Card;

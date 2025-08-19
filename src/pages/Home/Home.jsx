@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import 'bootstrap-icons/font/bootstrap-icons.css'
-import linkedinlogo from '../../assets/linkedin.png'
-import githublogo from '../../assets/github.png'
+import linkedinlogo from '/assets/linkedin.png'
+import githublogo from '/assets/github.png'
 import styles from './Home.module.scss';
 
 function Home(){
