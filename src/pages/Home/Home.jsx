@@ -24,7 +24,8 @@ function Home(){
                     <div className={styles.parteTextual}>
                         <div className={styles.texto}>
                             <h1> Welcome Outsider</h1>
-                            <p>my name is Weslley, i`m a fullstack developer and i have a few years of experience in the market. i currently work in an EdTech and as a freelancer, and this way, i developed technical and non-technical skills, such as teamwork and excellent problem solving.</p>
+                            <p>my name is Weslley, i`m a fullstack developer and i have a few years of experience in the market. i currently work in an EdTech and as a systems consultant, and this way, i developed technical
+                                and non-technical skills, such as teamwork and excellent problem solving.</p>
                             <p>i`m proficient in <strong style={{ color: '#79B45F' }}> Node.js </strong> development, building applications with <strong style={{ color: '#EED81C' }}>JavaScript</strong>,
                                 taking care of issues such as scalability, performance, code readability and proper use of tools. I really like using <strong style={{ color: '#3178C5' }}>TypeScript</strong>
                                 for the backend side, i belive it brings confidence to the code and i can use all my Javascript knowledge. I prioritize testing in my Applications and i like to use libs and frameworks
