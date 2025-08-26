@@ -1,9 +1,9 @@
 import { useParams } from "react-router-dom";
 import projects from "../../data/projects.json";
-import styles from './SelectedProjectPage.module.scss';
+import styles from './ProjectOverviewPage.module.scss';
 
 
-const SelectedProjectPage = () => {
+const ProjectOverviewPage = () => {
   const { projectId } = useParams();
 
   const project = projects.find(project => project.id === projectId);
@@ -18,4 +18,4 @@ const SelectedProjectPage = () => {
   );
 }
 
-export default SelectedProjectPage;
+export default ProjectOverviewPage;

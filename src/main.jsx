@@ -5,12 +5,12 @@ import { GlobalStyled } from './GlobalStyled.jsx'
 import Home from './pages/Home/Home.jsx'
 import Projects from './pages/Projects/Projects.jsx'
 import Contato from './pages/Contato/Contato.jsx'
-import SelectedProjectPage from './pages/SelectedProject/SelectedProjectPage.jsx'
+import ProjectOverviewPage from './pages/SelectedProject/ProjectOverviewPage.jsx'
 
 const router = createBrowserRouter([
   { path: '/', element: <Home /> },
   { path: '/weslley-projects', element: <Projects /> },
-  { path: '/project-selected/:projectId', element: <SelectedProjectPage /> },
+  { path: '/project-overview', element: <ProjectOverviewPage /> },
   { path: '/contato', element: <Contato /> },
 ])
 
