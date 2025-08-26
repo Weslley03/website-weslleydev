@@ -5,17 +5,3 @@
 .content {
   margin: 26px;
 }
-
-.projectImage {
-  max-width: 500px;
-  max-height: 500px;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-  border: 1px solid transparent;
-  border-radius: 18px;
-}
-
-.projectImage:hover {
-  border-radius: 18px;
- transform: scale(1.02);
-}

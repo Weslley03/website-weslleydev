@@ -6,8 +6,8 @@ import styles from './Projects.module.scss';
 function Projects() {
   const navigate = useNavigate();
 
-  const selectProject = (projectId) => {
-    navigate(`/project-selected/${projectId}`);
+  const selectProject = () => {
+    navigate('/project-overview');
   };
 
     return(
@@ -23,7 +23,7 @@ function Projects() {
                     image={project.image}
                     title={project.title}
                     description={project.description}
-                    onClick={() => selectProject(project.id)}
+                    onClick={() => selectProject()}
                   />
                 )
               })
