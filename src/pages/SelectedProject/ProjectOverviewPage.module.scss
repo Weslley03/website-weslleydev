@@ -2,6 +2,28 @@
   color: beige;
 }
 
+.father {
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+}
+
 .content {
-  margin: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.title {
+  color: #c4c4c4;
+  font-size: 55px;
+}
+
+@media (max-width: 800px) {
+  .father {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }

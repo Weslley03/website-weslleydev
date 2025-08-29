@@ -1,0 +1,32 @@
+[
+  { 
+    "id": "education-screen01",
+    "image": "/assets/educationScreen.png",
+    "title": "application of studies", 
+    "description": "i was responsible for developing the 'my exercise lists' screen in a platform designed for students and exam candidates. the layout was already defined, so my focus was on implementing display logic, optimizing performance to avoid bottlenecks or slow loading, and ensuring responsiveness. i used <span class='vue'>vue.js</span> with <span class='typescript'>typescript</span>, applying conditional rendering, optimized array searches, and asynchronous integrations with a <span class='nestjs'>nestjs</span> backend also written in <span class='typescript'>typescript</span>."
+  },
+  {
+    "id": "filter-screen02",
+    "image": "/assets/filterScreen.png",
+    "title": "application of studies",
+    "description": "i was responsible for implementing the filter section of the 'create lists' screen in a platform for students and exam candidates. in addition to display logic, i focused on performance and responsiveness, using <span class='pinia'>pinia</span> for global state management. the solution was built with <span class='vue'>vue.js</span> and performs frequent requests to the backend, ensuring efficient data synchronization and a smooth user experience."
+  },
+  { 
+    "id": "modal-alert03",
+    "image": "/assets/modalAlert.png",
+    "title": "application for colleges and teachers",
+    "description": "i was responsible for building an alert modal on the 'create online list' screen, designed for teachers, managers, and directors. the modal performs failure checks through backend requests and responds dynamically based on the results. development was done with <span class='javascript'>javascript</span> and <span class='react'>react</span>, integrated with a <span class='nestjs'>nestjs</span> backend, ensuring reliability in the alert flow and immediate feedback to users."
+  },
+  {
+    "id": "checkout04",
+    "image": "/assets/checkout.png",
+    "title": "custom checkout",
+    "description": "i was responsible for developing screens for a custom checkout builder, allowing vendors to configure the fields they want to display to their customers, with pages generated dynamically. the solution was developed with <span class='react'>react</span> and <span class='typescript'>typescript</span>, focusing on scalability, componentization, and flexibility to support multiple use cases."
+  },
+  { 
+    "id":"mini-vue-framework05",
+    "image": "/assets/miniVueFramework.png",
+    "title": "mini-vue-framework",
+    "description": "an experimental project in which i developed a reactive page using only <span class='html'>html</span> and <span class='javascript'>vanilla javascript</span>. built with modern <span class='javascript'>javascript</span>, it leverages <span class='javascript'>proxy</span> for reactivity, dynamic dom updates, and event binding. the goal is to demonstrate core concepts such as state management, component-like structures, and the foundations of reactivity in <span class='javascript'>javascript</span>."
+  }
+]

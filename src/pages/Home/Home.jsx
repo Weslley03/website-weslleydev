@@ -3,6 +3,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 import linkedinlogo from '/assets/linkedin.png'
 import githublogo from '/assets/github.png'
 import styles from './Home.module.scss';
+import colors from '../../utils/colors';
 
 function Home(){
     return(
@@ -26,10 +27,10 @@ function Home(){
                             <h1> Welcome Outsider</h1>
                             <p>my name is Weslley, i`m a fullstack developer and i have a few years of experience in the market. i currently work in an EdTech and as a systems consultant, and this way, i developed technical
                                 and non-technical skills, such as teamwork and excellent problem solving.</p>
-                            <p>i`m proficient in <strong style={{ color: '#79B45F' }}> Node.js </strong> development, building applications with <strong style={{ color: '#EED81C' }}>JavaScript</strong>,
-                                taking care of issues such as scalability, performance, code readability and proper use of tools. I really like using <strong style={{ color: '#3178C5' }}>TypeScript</strong>
+                            <p>i`m proficient in <strong style={{ color: colors.node }}> Node.js </strong> development, building applications with <strong style={{ color: colors.javascript }}>JavaScript</strong>,
+                                taking care of issues such as scalability, performance, code readability and proper use of tools. I really like using <strong style={{ color: colors.typescript }}>TypeScript</strong>
                                 for the backend side, i belive it brings confidence to the code and i can use all my Javascript knowledge. I prioritize testing in my Applications and i like to use libs and frameworks
-                                like <strong style={{ color: '#EA2859' }}>Nest.js</strong>, <strong style={{ color: '#3998B6' }}>React.js</strong> and <strong style={{ color: '#67B983' }}> Vue.js </strong>
+                                like <strong style={{ color: colors.nestjs }}>Nest.js</strong>, <strong style={{ color: colors.react }}>React.js</strong> and <strong style={{ color: colors.vue }}> Vue.js </strong>
                                 to make my live as a developer easier.</p>
                             <Link to={'/weslley-projects'} style={{textDecoration:'none'}}>
                                 <label className={styles.label}> my projects... </label>
