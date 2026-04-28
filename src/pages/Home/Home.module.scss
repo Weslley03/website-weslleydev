@@ -93,121 +93,12 @@
   flex-shrink: 0;
 }
 
-/* ── skills ── */
+/* ── shared list wrapper ── */
 
-.skillList {
+.list {
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
-}
-
-.skillRow {
-  display: flex;
-  align-items: baseline;
-  gap: 0.75rem;
-  font-size: 0.85rem;
-}
-
-.skillKey {
-  color: var(--color-label);
-  min-width: 90px;
-  flex-shrink: 0;
-}
-
-.arrow {
-  color: var(--color-label);
-  flex-shrink: 0;
-}
-
-.skillValue {
-  color: var(--color-text);
-}
-
-/* ── projects ── */
-
-.projectList {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.projectRow {
-  display: flex;
-  align-items: baseline;
-  gap: 0.75rem;
-  font-size: 0.82rem;
-  border-bottom: 1px solid var(--color-left-border);
-  padding-bottom: 0.4rem;
-  cursor: pointer;
-
-  &:last-child {
-    border-bottom: none;
-    padding-bottom: 0;
-  }
-}
-
-.projectArrow {
-  color: var(--color-link);
-  flex-shrink: 0;
-}
-
-.projectName {
-  color: var(--color-link);
-  font-weight: 600;
-  min-width: 180px;
-  flex-shrink: 0;
-
-  @media (max-width: 560px) {
-    min-width: 120px;
-  }
-}
-
-.projectDesc {
-  color: var(--color-subtitle);
-  flex: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-
-  @media (max-width: 480px) {
-    display: none;
-  }
-}
-
-.projectLink {
-  color: var(--color-label);
-  flex-shrink: 0;
-  margin-left: auto;
-}
-
-/* ── contact ── */
-
-.contactList {
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-}
-
-.contactRow {
-  display: flex;
-  gap: 1.5rem;
-  font-size: 0.85rem;
-
-  @media (max-width: 480px) {
-    flex-direction: column;
-    gap: 0.1rem;
-    margin-bottom: 0.4rem;
-  }
-}
-
-.contactFlag {
-  color: var(--color-label);
-  min-width: 110px;
-  flex-shrink: 0;
-}
-
-.contactValue {
-  color: var(--color-text);
+  gap: 0.4rem;
 }
 
 /* ── talk ── */

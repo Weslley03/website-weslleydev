@@ -1,6 +1,8 @@
 import { useState } from 'react'
-import PropTypes from 'prop-types'
 import TerminalBlock from '../../components/TerminalBlock/TerminalBlock'
+import SkillRow from '../../components/SkillRow/SkillRow'
+import ProjectRow from '../../components/ProjectRow/ProjectRow'
+import ContactRow from '../../components/ContactRow/ContactRow'
 import projects from '../../data/projects.json'
 import styles from './Home.module.scss'
 
@@ -21,55 +23,7 @@ const contactInfo = [
 const talkOptions = [
   { id: 1, label: 'whatsapp', href: 'https://wa.me/5544999428194' },
   { id: 2, label: 'linkedin', href: 'https://www.linkedin.com/in/weslley-felipe-69a547187/' },
-  ]
-
-function SkillRow({ skillKey, value }) {
-  return (
-    <div className={styles.skillRow}>
-      <span className={styles.skillKey}>{skillKey}</span>
-      <span className={styles.arrow}>→</span>
-      <span className={styles.skillValue}>{value}</span>
-    </div>
-  )
-}
-
-SkillRow.propTypes = {
-  skillKey: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
-}
-
-function ProjectRow({ title, description, href }) {
-  return (
-    <div className={styles.projectRow} onClick={() => window.open(href, '_blank', 'noopener,noreferrer')}>
-      <span className={styles.projectArrow}>→</span>
-      <span className={styles.projectName}>{title.toLowerCase()}</span>
-      <span className={styles.projectDesc}>
-        {description.toLowerCase().slice(0, 52).trimEnd()}...
-      </span>
-      <span className={styles.projectLink}>↗</span>
-    </div>
-  )
-}
-
-ProjectRow.propTypes = {
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  href: PropTypes.string.isRequired,
-}
-
-function ContactRow({ flag, value }) {
-  return (
-    <div className={styles.contactRow}>
-      <span className={styles.contactFlag}>{flag}</span>
-      <span className={styles.contactValue}>{value}</span>
-    </div>
-  )
-}
-
-ContactRow.propTypes = {
-  flag: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
-}
+]
 
 function Home() {
   const [selected, setSelected] = useState(1)
@@ -101,13 +55,13 @@ function Home() {
             </p>
             <p className={styles.bio}>
               <span className={styles.chevron}>&gt;</span>
-              fullstack coder em aplicações web completas. do frontend moderno ao backend robusto, integrações com APIs,
+              fullstack coder em aplicações web completas. do frontend moderno ao backend robusto, integrações com apis,
               bancos de dados e arquitetura de sistemas. atualmente disponível para projetos e consultoria.
             </p>
           </TerminalBlock>
 
           <TerminalBlock command="cat skills.txt">
-            <div className={styles.skillList}>
+            <div className={styles.list}>
               {skills.map(s => (
                 <SkillRow key={s.key} skillKey={s.key} value={s.value} />
               ))}
@@ -115,7 +69,7 @@ function Home() {
           </TerminalBlock>
 
           <TerminalBlock command="ls -la ~/projects">
-            <div className={styles.projectList}>
+            <div className={styles.list}>
               {projects.map(p => (
                 <ProjectRow key={p.id} title={p.title} description={p.description} href={p.href} />
               ))}
@@ -123,7 +77,7 @@ function Home() {
           </TerminalBlock>
 
           <TerminalBlock command="./contact --help">
-            <div className={styles.contactList}>
+            <div className={styles.list}>
               {contactInfo.map(c => (
                 <ContactRow key={c.flag} flag={c.flag} value={c.value} />
               ))}
