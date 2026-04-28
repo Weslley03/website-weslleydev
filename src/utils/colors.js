@@ -10,6 +10,32 @@ const colors = {
   css: "#1572b6",
   pazzei: "#A04CB3",
   superpro: "#447D53",
+
+  terminal: {
+    bg: "#0a0a0a",
+    window: "#0f0f0f",
+    windowBar: "#161616",
+    border: "#222222",
+    prompt: "#6b6b6b",
+    command: "#e8c56d",
+    leftBorder: "#1e1e1e",
+    dots: "#1a1a1a",
+    text: "#c8c8c8",
+    textDim: "#555555",
+    name: "#ffffff",
+    subtitle: "#888888",
+    label: "#6868a0",
+    link: "#5bc8d8",
+    chevron: "#6b6b6b",
+    buttonBorder: "#2a2a4a",
+    buttonActiveBg: "#151530",
+    buttonActiveText: "#9090cc",
+    dot: {
+      red: "#ff5f57",
+      yellow: "#ffbd2e",
+      green: "#28c840",
+    },
+  },
 }
 
-export default colors;
+export default colors

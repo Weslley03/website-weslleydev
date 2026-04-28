@@ -1,119 +1,282 @@
-.containerHome {
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+.terminal {
+  width: 100%;
+  max-width: 760px;
+  background-color: var(--color-window);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+/* ── window chrome ── */
+
+.windowBar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.65rem 1rem;
+  background-color: var(--color-window-bar);
+  border-bottom: 1px solid var(--color-border);
+  position: relative;
+}
+
+.dots {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dotRed    { background-color: var(--color-dot-red); }
+.dotYellow { background-color: var(--color-dot-yellow); }
+.dotGreen  { background-color: var(--color-dot-green); }
+
+.windowTitle {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--color-text-dim);
+  font-size: 0.78rem;
+  user-select: none;
+}
+
+/* ── body ── */
+
+.body {
+  padding: 1.5rem 1.75rem 1rem;
+}
+
+/* ── whoami ── */
+
+.name {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--color-name);
+  text-transform: lowercase;
+  line-height: 1.1;
+  margin-bottom: 0.35rem;
+
+  @media (max-width: 480px) {
+    font-size: 1.6rem;
+  }
+}
+
+.subtitle {
+  font-size: 0.82rem;
+  color: var(--color-subtitle);
+  margin-bottom: 0.75rem;
+}
+
+.bio {
+  font-size: 0.85rem;
+  color: var(--color-text);
+  line-height: 1.6;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.chevron {
+  color: var(--color-chevron);
+  flex-shrink: 0;
+}
+
+/* ── skills ── */
+
+.skillList {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 65%;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  padding: 0.5rem;
-  border-radius: 12px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  border: 2px solid #c4c4c4;
-
-  background-color: #0c0c0c;
-
-  @media (max-width: 1056px) {
-    width: 90%;
-    padding: 1rem;
-  }
+  gap: 0.3rem;
 }
 
-.top {
+.skillRow {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 0.5rem;
-
-  @media (max-width: 900px) {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+  align-items: baseline;
+  gap: 0.75rem;
+  font-size: 0.85rem;
 }
 
-.logo {
+.skillKey {
+  color: var(--color-label);
+  min-width: 90px;
+  flex-shrink: 0;
+}
+
+.arrow {
+  color: var(--color-label);
+  flex-shrink: 0;
+}
+
+.skillValue {
+  color: var(--color-text);
+}
+
+/* ── projects ── */
+
+.projectList {
   display: flex;
-  align-items: center;
-
-  @media (max-width: 900px) {
-    margin-bottom: 1rem;
-  }
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-.links {
+.projectRow {
   display: flex;
-  align-items: center;
-}
-
-.logoImg {
-  height: 70px;
-  width: 70px;
-  padding: 0.2rem;
-
+  align-items: baseline;
+  gap: 0.75rem;
+  font-size: 0.82rem;
+  border-bottom: 1px solid var(--color-left-border);
+  padding-bottom: 0.4rem;
   cursor: pointer;
-  border-radius: 2rem;
+
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
 }
 
-.welcomeSection {
+.projectArrow {
+  color: var(--color-link);
+  flex-shrink: 0;
+}
+
+.projectName {
+  color: var(--color-link);
+  font-weight: 600;
+  min-width: 180px;
+  flex-shrink: 0;
+
+  @media (max-width: 560px) {
+    min-width: 120px;
+  }
+}
+
+.projectDesc {
+  color: var(--color-subtitle);
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  @media (max-width: 480px) {
+    display: none;
+  }
+}
+
+.projectLink {
+  color: var(--color-label);
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+/* ── contact ── */
+
+.contactList {
   display: flex;
-  width: 100%;
-  margin-top: 0.5px;
-  padding: 0.5rem;
-
-  @media (max-width: 900px) {
-    flex-direction: column;
-  }
+  flex-direction: column;
+  gap: 0.3rem;
 }
 
-.separacaoWelcome {
+.contactRow {
   display: flex;
-  justify-content: space-between;
+  gap: 1.5rem;
+  font-size: 0.85rem;
 
-  @media (max-width: 900px) {
+  @media (max-width: 480px) {
     flex-direction: column;
+    gap: 0.1rem;
+    margin-bottom: 0.4rem;
   }
 }
 
-.parteTextual {
+.contactFlag {
+  color: var(--color-label);
+  min-width: 110px;
+  flex-shrink: 0;
+}
+
+.contactValue {
+  color: var(--color-text);
+}
+
+/* ── talk ── */
+
+.talkPrompt {
+  font-size: 0.85rem;
+  color: var(--color-text);
   display: flex;
-  max-width: 70%;
-
-  @media (max-width: 900px) {
-    max-width: 100%;
-    flex-direction: column;
-  }
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
-.texto {
-  padding: 1rem;
-  h1 {
-    color: #c4c4c4;
-    font-size: 55px;
-
-    @media (max-width: 900px) {
-      font-size: 50px;
-    }
-  }
-
-  p {
-    color: #c4c4c4;
-    font-size: 20px;
-  }
+.talkButtons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.6rem;
 }
 
-footer {
-  padding: 0.2rem;
-
-  a {
-    color: #c4c4c4;
-    font-size: 20px;
-  }
-}
-
-.label {
-  color: #c4c4c4;
-  font-size: 20px;
+.talkBtn {
+  background: transparent;
+  border: 1px solid var(--color-button-border);
+  color: var(--color-text-dim);
+  font-family: inherit;
+  font-size: 0.82rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 3px;
   cursor: pointer;
+  transition: border-color 0.15s, color 0.15s, background-color 0.15s;
+
+  &:hover {
+    border-color: var(--color-label);
+    color: var(--color-text);
+  }
+}
+
+.talkBtnActive {
+  background-color: var(--color-button-active-bg);
+  border-color: var(--color-label);
+  color: var(--color-button-active-text);
+}
+
+.talkHint {
+  font-size: 0.75rem;
+  color: var(--color-text-dim);
+}
+
+/* ── final prompt ── */
+
+.finalPrompt {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0 0.25rem;
+}
+
+.promptSymbol {
+  color: var(--color-prompt);
+  font-weight: 500;
+  user-select: none;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+.cursor {
+  color: var(--color-prompt);
+  animation: blink 1s step-end infinite;
 }
