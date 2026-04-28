@@ -1,53 +1,117 @@
-import { Link } from 'react-router-dom';
-import 'bootstrap-icons/font/bootstrap-icons.css'
-import linkedinlogo from '/assets/linkedin.png'
-import githublogo from '/assets/github.png'
-import styles from './Home.module.scss';
-import colors from '../../utils/colors';
+import { useState } from 'react'
+import TerminalBlock from '../../components/TerminalBlock/TerminalBlock'
+import SkillRow from '../../components/SkillRow/SkillRow'
+import ProjectRow from '../../components/ProjectRow/ProjectRow'
+import ContactRow from '../../components/ContactRow/ContactRow'
+import projects from '../../data/projects.json'
+import styles from './Home.module.scss'
 
-function Home(){
-    return(
-        <div className={styles.containerHome}> 
-            <div className={styles.top}>
-                <div className={styles.logo}></div>
-                <div className={styles.links}> 
-                    <a href='https://www.linkedin.com/in/weslley-felipe-69a547187/' target="_blank" rel="noopener noreferrer"> 
-                        <img className={styles.logoImg} src={linkedinlogo}/>
-                    </a>
-                    <a href='https://github.com/weslley03' target="_blank" rel="noopener noreferrer"> 
-                        <img className={styles.logoImg} src={githublogo}/>
-                    </a>
-                </div>
-            </div>
+const skills = [
+  { key: 'languages', value: 'typescript, java' },
+  { key: 'backend',   value: 'spring boot, nestjs' },
+  { key: 'frontend',  value: 'reactjs, vuejs' },
+  { key: 'database',  value: 'postgresql, mongodb atlas' },
+]
 
-            <div className={styles.welcomeSection}>
-                <div className={styles.separacaoWelcome}>
-                    <div className={styles.parteTextual}>
-                        <div className={styles.texto}>
-                            <h1> Welcome Outsider</h1>
-                            <p>my name is Weslley, i`m a fullstack developer and i have a few years of experience in the market. i currently work in an EdTech and as a systems consultant, and this way, i developed technical
-                                and non-technical skills, such as teamwork and excellent problem solving.</p>
-                            <p>i`m proficient in <strong style={{ color: colors.node }}> Node.js </strong> development, building applications with <strong style={{ color: colors.javascript }}>JavaScript</strong>,
-                                taking care of issues such as scalability, performance, code readability and proper use of tools. I really like using <strong style={{ color: colors.typescript }}>TypeScript</strong>
-                                for the backend side, i belive it brings confidence to the code and i can use all my Javascript knowledge. I prioritize testing in my Applications and i like to use libs and frameworks
-                                like <strong style={{ color: colors.nestjs }}>Nest.js</strong>, <strong style={{ color: colors.react }}>React.js</strong> and <strong style={{ color: colors.vue }}> Vue.js </strong>
-                                to make my live as a developer easier.</p>
-                            <Link to={'/weslley-projects'} style={{textDecoration:'none'}}>
-                                <label className={styles.label}> my projects... </label>
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-            </div>
+const contactInfo = [
+  { flag: '--phone',    value: '+55 44 99942-8194' },
+  { flag: '--github',   value: 'github.com/weslley03' },
+  { flag: '--linkedin', value: 'linkedin.com/in/weslley-felipe-69a547187/' },
+  { flag: '--location', value: 'maringá, paraná' },
+]
 
-            <div className={styles.footer}>
-                <Link to={'/contato'} style={{ textDecoration: 'none', color: 'inherit'}}>
-                    <span className={styles.label}>contact forms</span>
-                </Link>
+const talkOptions = [
+  { id: 1, label: 'whatsapp', href: 'https://wa.me/5544999428194' },
+  { id: 2, label: 'linkedin', href: 'https://www.linkedin.com/in/weslley-felipe-69a547187/' },
+]
+
+function Home() {
+  const [selected, setSelected] = useState(1)
+
+  function handleTalk(option) {
+    setSelected(option.id)
+    window.open(option.href, '_blank', 'noopener,noreferrer')
+  }
+
+  return (
+    <div className={styles.page}>
+      <div className={styles.terminal}>
+
+        <div className={styles.windowBar}>
+          <div className={styles.dots}>
+            <span className={`${styles.dot} ${styles.dotRed}`} />
+            <span className={`${styles.dot} ${styles.dotYellow}`} />
+            <span className={`${styles.dot} ${styles.dotGreen}`} />
+          </div>
+          <span className={styles.windowTitle}>weslley@portfolio ~</span>
+        </div>
+
+        <div className={styles.body}>
+
+          <TerminalBlock command="whoami">
+            <h1 className={styles.name}>weslley felipe</h1>
+            <p className={styles.subtitle}>
+              full-stack developer · java + typescript · maringá, pr
+            </p>
+            <p className={styles.bio}>
+              <span className={styles.chevron}>&gt;</span>
+              fullstack coder em aplicações web completas. do frontend moderno ao backend robusto, integrações com apis,
+              bancos de dados e arquitetura de sistemas. atualmente disponível para projetos e consultoria.
+            </p>
+          </TerminalBlock>
+
+          <TerminalBlock command="cat skills.txt">
+            <div className={styles.list}>
+              {skills.map(s => (
+                <SkillRow key={s.key} skillKey={s.key} value={s.value} />
+              ))}
             </div>
+          </TerminalBlock>
+
+          <TerminalBlock command="ls -la ~/projects">
+            <div className={styles.list}>
+              {projects.map(p => (
+                <ProjectRow key={p.id} title={p.title} description={p.description} href={p.href} />
+              ))}
+            </div>
+          </TerminalBlock>
+
+          <TerminalBlock command="./contact --help">
+            <div className={styles.list}>
+              {contactInfo.map(c => (
+                <ContactRow key={c.flag} flag={c.flag} value={c.value} />
+              ))}
+            </div>
+          </TerminalBlock>
+
+          <TerminalBlock command="run ./talk.sh">
+            <p className={styles.talkPrompt}>
+              <span className={styles.chevron}>&gt;</span>
+              vamos conversar?
+            </p>
+            <div className={styles.talkButtons}>
+              {talkOptions.map(opt => (
+                <button
+                  key={opt.id}
+                  className={`${styles.talkBtn} ${selected === opt.id ? styles.talkBtnActive : ''}`}
+                  onClick={() => handleTalk(opt)}
+                >
+                  [{opt.id}] {opt.label}
+                </button>
+              ))}
+            </div>
+            <p className={styles.talkHint}>selecione uma opção...</p>
+          </TerminalBlock>
+
+          <div className={styles.finalPrompt}>
+            <span className={styles.promptSymbol}>~ $</span>
+            <span className={styles.cursor}>_</span>
+          </div>
 
         </div>
-    )
+      </div>
+    </div>
+  )
 }
 
 export default Home

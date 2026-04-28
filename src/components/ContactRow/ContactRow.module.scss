@@ -1,0 +1,21 @@
+.row {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.85rem;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    gap: 0.1rem;
+    margin-bottom: 0.4rem;
+  }
+}
+
+.flag {
+  color: var(--color-label);
+  min-width: 110px;
+  flex-shrink: 0;
+}
+
+.value {
+  color: var(--color-text);
+}
