@@ -1,9 +1,9 @@
 [
   {
-    "id": "ig-comments-analyzer",
-    "title": "ig-comments-analyzer",
-    "description": "scrapes public instagram post comments using browser automation and analyzes audience sentiment with llms via api.",
-    "href": "https://github.com/Weslley03/ig-comments-analyzer"
+    "id": "player-statistics",
+    "title": "player-statistics ",
+    "description": "player-statics is a system for tracking individual and group statistics for a group of friends who play soccer regularly and want to record and rank their performance.",
+    "href": "https://comprar.player-statistics.online"
   },
   {
     "id": "ai-tools-cli",
