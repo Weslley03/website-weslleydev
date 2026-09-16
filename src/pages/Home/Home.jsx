@@ -8,16 +8,17 @@ import styles from './Home.module.scss'
 
 const skills = [
   { key: 'languages', value: 'typescript, java' },
-  { key: 'backend',   value: 'spring boot, nestjs' },
-  { key: 'frontend',  value: 'reactjs, vuejs' },
-  { key: 'database',  value: 'postgresql, mongodb atlas' },
-]
+  { key: 'backend', value: 'spring boot, nestjs, node.js' },
+  { key: 'frontend', value: 'angular, react' },
+  { key: 'database', value: 'postgresql, redis' },
+  { key: 'architecture', value: 'system design, distributed systems' },
+  { key: 'resource', value: 'message queues, aws, docker, ai integration' },
+];
 
 const contactInfo = [
   { flag: '--phone',    value: '+55 44 99942-8194' },
   { flag: '--github',   value: 'github.com/weslley03' },
   { flag: '--linkedin', value: 'linkedin.com/in/weslley-felipe-69a547187/' },
-  { flag: '--location', value: 'maringá, paraná' },
 ]
 
 const talkOptions = [
@@ -51,12 +52,13 @@ function Home() {
           <TerminalBlock command="whoami">
             <h1 className={styles.name}>weslley felipe</h1>
             <p className={styles.subtitle}>
-              full-stack developer · java + typescript · maringá, pr
+              fullstack developer · java + typescript + cloud · remote from brazil
             </p>
             <p className={styles.bio}>
               <span className={styles.chevron}>&gt;</span>
-              fullstack coder em aplicações web completas. do frontend moderno ao backend robusto, integrações com apis,
-              bancos de dados e arquitetura de sistemas. atualmente disponível para projetos e consultoria.
+              backend-focused developer with experience in Java, Spring Boot, Node.js,
+              and NestJS, building scalable applications, REST APIs, integrations, and asynchronous systems.
+              also experienced with Angular, with a strong understanding of the full application lifecycle
             </p>
           </TerminalBlock>
 
@@ -87,7 +89,7 @@ function Home() {
           <TerminalBlock command="run ./talk.sh">
             <p className={styles.talkPrompt}>
               <span className={styles.chevron}>&gt;</span>
-              vamos conversar?
+              let&apos;s talk?
             </p>
             <div className={styles.talkButtons}>
               {talkOptions.map(opt => (
@@ -100,7 +102,6 @@ function Home() {
                 </button>
               ))}
             </div>
-            <p className={styles.talkHint}>selecione uma opção...</p>
           </TerminalBlock>
 
           <div className={styles.finalPrompt}>
